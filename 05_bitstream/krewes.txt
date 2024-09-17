@@ -1,0 +1,4 @@
+pd$$$devo$$$ducky@@@pd$$$devo$$$ducky@@@pd$$$devo$$$ducky@@@
+
+
+facts = {"Captain of pd5 has entered the chat", "Genie of pd5 has entered the chat" ,"Daedalus of pd5 has entered the chat", "Wizard of pd5 has entered the chat", "Shu of pd5 has entered the chat", "Sherman of pd5 has entered the chat", ""}
