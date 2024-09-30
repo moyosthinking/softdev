@@ -33,3 +33,7 @@ path/to/myworkshop$ tree 12_flask-jinja
 
 <br>
 [related]()
+
+NOTABLE
+model_tmplt.hmtl was in templates folder and i couldn't open
+only things in static folder can be opened
