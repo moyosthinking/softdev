@@ -12,17 +12,14 @@ import random
 
 with open('occupations.csv', newline='') as csvfile: # reads the csv file using python's csv import
     occupations = csv.reader(csvfile)
-    dict = {} # initatizes a new dictionary
+    dic = {} # initatizes a new dictionary
     for row in occupations:
         if (row[0] != 'Job Class') and (row[0] != 'Total'): # removes the first and last keys
-            dict.update({row[0]:float(row[1])}) # updates the dictionary with the occupations as keys and the percentage as values.
-
-x = dict.keys()
-
+            dic.update({row[0]:float(row[1])}) # updates the dictionary with the occupations as keys and the percentage as values.
+    
 app = Flask(__name__) # initalizes the flask application
 @app.route("/wdywtbwygp") # routes using the '/' directory
-
-
+    
 def occ_template():
-    return render_template('template.html', foo="fooooo", occupations = x) ##thi sline is the issue
+    return render_template("template.html", title = "Occupation Title Combined", occupations = dic.keys())
 app.run()
