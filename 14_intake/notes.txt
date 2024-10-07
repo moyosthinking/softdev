@@ -1,0 +1,21 @@
+< your heading here >
+
+DISCO:
+* when user submites user, we can make a func in other py file run, goo() specifially
+* 
+* 
+-----------------------------------------------------------------------
+
+
+Q/C/C:
+* what does #, methods=['GET', 'POST']) by the routes mean?
+* why syntax error when remove #
+* 
+-----------------------------------------------------------------------
+
+
+OTHER?
+* 
+* 
+* 
+-----------------------------------------------------------------------
