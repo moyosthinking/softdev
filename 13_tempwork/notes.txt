@@ -1,0 +1,4 @@
+you need a title and varible in the like template line
+you can have multiple varibles
+the slected occupation doesn't wanna chang ewhen i refresh Ppage
+but will when i restart server, doesnt change when i turn on debug

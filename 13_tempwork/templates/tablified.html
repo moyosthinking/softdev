@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+  Moyo Fagbuyi, Sascha Gordon-Zolov, Ziyad Hamed (PPAP)
+  SoftDev
+  Oct 2024
+ -->
+
+<html>
+
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+  </style>
+
+  <head>
+    <title> {{ title }} </title>
+  </head>
+
+  <body>
+    <h1>  Moyo Fagbuyi, Sascha Gordon-Zolov, Ziyad Hamed  </h1>
+    <h1> PPAP </h1>
+    <h2>  This page showcases a table of occupations, along with their Percentanges. At the top of the page, once you refresh, a different occupation is shown, it's likelyhood of showing up is based on its' percentage.</h2>
+    <h3>{{rand}}</h3>
+    <table style="width:100%">
+      <tr>
+        <th>Occupations</th>
+        <th>Percentanges</th> 
+      </tr>
+        {% for item in occupations %}
+          <tr>
+            <td><a href= "{{item[1][1]}}"> {{ item[0] }}</a> </td>
+            <td> {{ item[1][0] }} </td>
+          </tr>
+        {% endfor %}
+  </table>
+  </body>
+
+</html>
