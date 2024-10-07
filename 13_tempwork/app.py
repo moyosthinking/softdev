@@ -27,12 +27,11 @@ def randomSelection(): # function for choosing a random number with a weighted p
         if x <= 0:
             return finalText + "Selected Occupation: " + key# adds the randaomly selected occupation html
         
-randm = randomSelection()
         
 app = Flask(__name__) # initalizes the flask application
 @app.route("/wdywtbwygp") # routes using the '/' directory
     
 def occ_template():
-    return render_template("tablified.html", title = "Occupation Title Combined", occupations = dic.items(), rand = randm)
+    return render_template("tablified.html", title = "Occupation Title Combined", occupations = dic.items(), rand = randomSelection())
 
 app.run()
