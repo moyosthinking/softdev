@@ -1,16 +1,22 @@
-< your heading here >
+# Margie Cao, Moyo Fagbuyi, Tim Ng
+# SoftDev
+* K14
+# October 2024
+
 
 DISCO:
 * when user submites user, we can make a func in other py file run, goo() specifially
-* 
-* 
+* request.method returns GET in loginpage and authenticate, probably because
+* the server is getting things from the user
+* print(request.args['username']) #this kinda breaks everything in uhuhuhuh the loginpage route
+* i think because there is no username arugment yet, only in auth page it's stored
+* "this print statement came from test module" prints when server/app.py/reloads
 -----------------------------------------------------------------------
 
 
 Q/C/C:
 * what does #, methods=['GET', 'POST']) by the routes mean?
 * why syntax error when remove #
-* 
 -----------------------------------------------------------------------
 
 

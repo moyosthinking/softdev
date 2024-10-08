@@ -1,6 +1,8 @@
-# Clyde 'Thluffy' Sinclair
+# Margie Cao, Moyo Fagbuyi, Tim Ng
+# System Level Programming
 # SoftDev
-# October 2024
+# 2024-10-08
+# 1.5 periods
 
 # import conventions:
 # list most general first (standard python library)
@@ -39,39 +41,43 @@ PROTIP: Insert your own in-line comments
    understand what is going on.
 '''
 
-@app.route("/")  #, (methods=['GET', 'POST'])
+@app.route("/",  methods=['GET'])  #, (methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
     print("***DIAG: request obj ***")
-    print(request)
+    print(request) # prints out home route to terminal
     print("***DIAG: request.args ***")
-    print(request.args)
-    print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    print(request.args) # this is ImmutableMultiDict([])
+#     print("***DIAG: request.args['username']  ***") 
+#     print(request.args['username']) #this kinda breaks everything
     print("***DIAG: request.headers ***")
-    print(request.headers)
+    print(request.headers) #gives like a bunch of information on the current website user
+#     print("***DIAG: methods[0]***")
+#     print(request.method)
     return render_template( 'login.html' )
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=['GET']) #, methods=['GET', 'POST'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
     print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
+    print(request) #returns link to current page
+    print("***DIAG: request.args ***") 
+    print(request.args) #returns agruments user inputtied, and sub1
     print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    print(request.args['username']) #returns username sspecifally
     print("***DIAG: request.headers ***")
-    print(request.headers)
+    print(request.headers) #gives like a bunch of information on the current website user
+#     print("***DIAG: methods[0]***")
+#     print(request.method)
     return testmod0.goo()  #response to a form submission
 
 
-    
+
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
     app.debug = True 
