@@ -1,0 +1,2 @@
+it wont let me use 'POST' method withotu getting method not allowed - >
+so when can i use POST?
