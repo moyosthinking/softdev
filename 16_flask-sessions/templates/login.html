@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <!-- 
-  Clyde 'Thluffy' Sinclair
-  SoftDev
-  Sep 2024
-
- -->
-
+Systems Level Programming - Margie Cao, Tim Ng, Moyo Fagbuyi
+SoftDev
+K16 - working with sessions and cookies
+2024-10-09
+time spent: 3 hours
+-->
 
 <html>
 
   <head>
-    <title> LOGIN PAGE </title>
+    <title> M&M </title>
   </head>
 
   <body>
@@ -18,15 +18,15 @@
       Margie Cao, Moyo Fagbuyi, Tim Ng (Systems Level Programming)
     </h1>
 
-
     <h3>
-      Enter your username below to proceed.
+      Enter your username and password below to proceed.
     </h3>
-    <form action="/auth" method="GET"> <!--- get allows user inputs to be stored -->
-      <input type="text" name="username">
+    <form action="/auth" method="POST"> <!--- get allows user inputs to be stored -->
+      <label for="username">Username:</label><br>  
+      <input type="text" required id="username" name="username"> <br><br>
+      <label for="password">Password:</label><br> 
+      <input type="text" required id="password" name="password" > <br><br>
       <input type="submit" name="sub1">
     </form>
-    <br>
   </body>
 
-</html>

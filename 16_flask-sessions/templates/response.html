@@ -1,22 +1,25 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <!-- 
-  Clyde 'Thluffy' Sinclair
-  SoftDev
-  Sep 2024
+Systems Level Programming - Margie Cao, Tim Ng, Moyo Fagbuyi
+SoftDev
+K16 - working with sessions and cookies
+2024-10-09
+time spent: 3 hours
  -->
 
 
 <html>
 
   <head>
-    <title> FEEDBACK PAGE </title>
+    <title> Your Page </title>
   </head>
-
   <body>
     <h1>
-      Thank you for submitting you data! We will now sell it :>
+      What's popping {{name}}
     </h1>
-    {{inputted}} <!--- displays stored iunputs -->
+    <form action="/logout" method="POST">
+      <button type="submit">Logout</button>
+    </form>
   </body>
 
 </html>

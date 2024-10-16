@@ -1,3 +1,33 @@
+Margie Cao, Moyo Fagbuyi, Tim Ng
+System Level Programming
+SoftDev
+2024-10-09
+Time Spent: 3 hours
+
+DISCO:
+*
+*
+* 
+-----------------------------------------------------------------------
+
+
+Q/C/C:
+* server checks for cookies
+if none:
+	make cookies from user data
+	store cookies on user computer
+else:
+	get cookies
+	turn cookies into user data
+# where do we store the secret key?
+-----------------------------------------------------------------------
+
+
+OTHER?
+* 
+* 
+* 
+-----------------------------------------------------------------------
 server checks for cookies
 if none:
 	make cookies from user data
@@ -5,4 +35,3 @@ if none:
 else:
 	get cookies
 	turn cookies into user data
-	
