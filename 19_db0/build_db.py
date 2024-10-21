@@ -21,7 +21,7 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
-command = "CREATE TABLE IF NOT EXISTS student(name TEXT, id INTEGER PRIMARY KEY)"          # test SQL stmt in sqlite3 shell, save as string
+command = "CREATE TABLE student(name TEXT, id INTEGER PRIMARY KEY)"          # test SQL stmt in sqlite3 shell, save as string
 
 c.execute(command)
 
@@ -33,13 +33,13 @@ with open('students.csv','r') as text:
     for row in data:
         names.append(row.get("name")) #puts all names into a list
         idd.append(int(row.get("id")))
-        
+
 x = 0
 for pers in names:
-    c.execute(f'INSERT OR IGNORE INTO student (name, id) VALUES ("{pers}", {idd[x]})')
+    c.execute(f'INSERT student (name, id) VALUES ("{pers}", {idd[x]})')
     x += 1
 
-coursesDB = "CREATE TABLE IF NOT EXISTS course(code TEXT, mark INTEGER, id INTEGER)"   # no primary key bc we can have repateint grades and ids
+coursesDB = "CREATE TABLE course(code TEXT, mark INTEGER, id INTEGER)"   # no primary key bc we can have repateint grades and ids
 course = []
 mark = []
 idCourse = []
@@ -60,7 +60,7 @@ c.execute(coursesDB)
 
 y = 0
 for classs in course:
-    c.execute(f'INSERT OR IGNORE INTO course(code, mark, id) VALUES ("{classs}", {mark[y]}, {idCourse[y]})')
+    c.execute(f'INSERT course(code, mark, id) VALUES ("{classs}", {mark[y]}, {idCourse[y]})')
     y += 1
 
 

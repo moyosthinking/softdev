@@ -5,6 +5,7 @@ DISCOVERIES:
 ----------------------------------------------------
 * tuples would prob be helpful somehow
 * creaintg a string with all the insert values, makes a syntax error, so do inserts one by one
+* the value labeled INTEGER PRIMARY KEY, is used to order the info in the database
 *
 ====================================================
 
