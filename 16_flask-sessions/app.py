@@ -6,7 +6,7 @@
 # Time Spent: 3 hours
 
 from flask import Flask, render_template, request, session #this one stores like verything
-import os 
+import os
 from utl import ants
 
 app = Flask(__name__)
@@ -39,5 +39,5 @@ def redirect():
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
