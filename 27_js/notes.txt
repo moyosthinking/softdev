@@ -1,0 +1,2 @@
+C:
+maybe this is because i barely uses js, but '{}' go around the entire fuction and return statemates. ';' comes after return statement.
